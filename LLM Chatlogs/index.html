@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html style="color-scheme: dark;" class="dark">
+<head>
+  <style type="text/css">:root, :host {
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+    --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+    --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+    --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+    --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+    --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+    --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+    --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+  }
+
+  svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+  }
+
+  .svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+  }
+
+  .svg-inline--fa.fa-2xs {
+    vertical-align: 0.1em;
+  }
+
+  .svg-inline--fa.fa-xs {
+    vertical-align: 0em;
+  }
+
+  .svg-inline--fa.fa-sm {
+    vertical-align: -0.0714285705em;
+  }
+
+  .svg-inline--fa.fa-lg {
+    vertical-align: -0.2em;
+  }
+
+  .svg-inline--fa.fa-xl {
+    vertical-align: -0.25em;
+  }
+
+  .svg-inline--fa.fa-2xl {
+    vertical-align: -0.3125em;
+  }
+
+  .svg-inline--fa.fa-pull-left {
+    margin-right: var(--fa-pull-margin, 0.3em);
+    width: auto;
+  }
+
+  .svg-inline--fa.fa-pull-right {
+    margin-left: var(--fa-pull-margin, 0.3em);
+    width: auto;
+  }
+
+  .svg-inline--fa.fa-li {
+    width: var(--fa-li-width, 2em);
+    top: 0.25em;
+  }
+
+  .svg-inline--fa.fa-fw {
+    width: var(--fa-fw-width, 1.25em);
+  }
+
+  .fa-layers svg.svg-inline--fa {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .fa-layers-counter, .fa-layers-text {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+  }
+
+  .fa-layers {
+    display: inline-block;
+    height: 1em;
+    position: relative;
+    text-align: center;
+    vertical-align: -0.125em;
+    width: 1em;
+  }
+
+  .fa-layers svg.svg-inline--fa {
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+  }
+
+  .fa-layers-text {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+  }
+
+  .fa-layers-counter {
+    background-color: var(--fa-counter-background-color, #ff253a);
+    border-radius: var(--fa-counter-border-radius, 1em);
+    box-sizing: border-box;
+    color: var(--fa-inverse, #fff);
+    line-height: var(--fa-counter-line-height, 1);
+    max-width: var(--fa-counter-max-width, 5em);
+    min-width: var(--fa-counter-min-width, 1.5em);
+    overflow: hidden;
+    padding: var(--fa-counter-padding, 0.25em 0.5em);
+    right: var(--fa-right, 0);
+    text-overflow: ellipsis;
+    top: var(--fa-top, 0);
+    -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+    transform: scale(var(--fa-counter-scale, 0.25));
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+  }
+
+  .fa-layers-bottom-right {
+    bottom: var(--fa-bottom, 0);
+    right: var(--fa-right, 0);
+    top: auto;
+    -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+    transform: scale(var(--fa-layers-scale, 0.25));
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+  }
+
+  .fa-layers-bottom-left {
+    bottom: var(--fa-bottom, 0);
+    left: var(--fa-left, 0);
+    right: auto;
+    top: auto;
+    -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+    transform: scale(var(--fa-layers-scale, 0.25));
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+  }
+
+  .fa-layers-top-right {
+    top: var(--fa-top, 0);
+    right: var(--fa-right, 0);
+    -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+    transform: scale(var(--fa-layers-scale, 0.25));
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+  }
+
+  .fa-layers-top-left {
+    left: var(--fa-left, 0);
+    right: auto;
+    top: var(--fa-top, 0);
+    -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+    transform: scale(var(--fa-layers-scale, 0.25));
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+  }
+
+  .fa-1x {
+    font-size: 1em;
+  }
+
+  .fa-2x {
+    font-size: 2em;
+  }
+
+  .fa-3x {
+    font-size: 3em;
+  }
+
+  .fa-4x {
+    font-size: 4em;
+  }
+
+  .fa-5x {
+    font-size: 5em;
+  }
+
+  .fa-6x {
+    font-size: 6em;
+  }
+
+  .fa-7x {
+    font-size: 7em;
+  }
+
+  .fa-8x {
+    font-size: 8em;
+  }
+
+  .fa-9x {
+    font-size: 9em;
+  }
+
+  .fa-10x {
+    font-size: 10em;
+  }
+
+  .fa-2xs {
+    font-size: 0.625em;
+    line-height: 0.1em;
+    vertical-align: 0.225em;
+  }
+
+  .fa-xs {
+    font-size: 0.75em;
+    line-height: 0.0833333337em;
+    vertical-align: 0.125em;
+  }
+
+  .fa-sm {
+    font-size: 0.875em;
+    line-height: 0.0714285718em;
+    vertical-align: 0.0535714295em;
+  }
+
+  .fa-lg {
+    font-size: 1.25em;
+    line-height: 0.05em;
+    vertical-align: -0.075em;
+  }
+
+  .fa-xl {
+    font-size: 1.5em;
+    line-height: 0.0416666682em;
+    vertical-align: -0.125em;
+  }
+
+  .fa-2xl {
+    font-size: 2em;
+    line-height: 0.03125em;
+    vertical-align: -0.1875em;
+  }
+
+  .fa-fw {
+    text-align: center;
+    width: 1.25em;
+  }
+
+  .fa-ul {
+    list-style-type: none;
+    margin-left: var(--fa-li-margin, 2.5em);
+    padding-left: 0;
+  }
+
+  .fa-ul > li {
+    position: relative;
+  }
+
+  .fa-li {
+    left: calc(var(--fa-li-width, 2em) * -1);
+    position: absolute;
+    text-align: center;
+    width: var(--fa-li-width, 2em);
+    line-height: inherit;
+  }
+
+  .fa-border {
+    border-color: var(--fa-border-color, #eee);
+    border-radius: var(--fa-border-radius, 0.1em);
+    border-style: var(--fa-border-style, solid);
+    border-width: var(--fa-border-width, 0.08em);
+    padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+  }
+
+  .fa-pull-left {
+    float: left;
+    margin-right: var(--fa-pull-margin, 0.3em);
+  }
+
+  .fa-pull-right {
+    float: right;
+    margin-left: var(--fa-pull-margin, 0.3em);
+  }
+
+  .fa-beat {
+    -webkit-animation-name: fa-beat;
+    animation-name: fa-beat;
+    -webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+    -webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+    -webkit-animation-duration: var(--fa-animation-duration, 1s);
+    animation-duration: var(--fa-animation-duration, 1s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    animation-timing-function: var(--fa-animation-timing, ease-in-out);
+  }
+
+  .fa-bounce {
+    -webkit-animation-name: fa-bounce;
+    animation-name: fa-bounce;
+    -webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+    -webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+    -webkit-animation-duration: var(--fa-animation-duration, 1s);
+    animation-duration: var(--fa-animation-duration, 1s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+    animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+  }
+
+  .fa-fade {
+    -webkit-animation-name: fa-fade;
+    animation-name: fa-fade;
+    -webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+    -webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+    -webkit-animation-duration: var(--fa-animation-duration, 1s);
+    animation-duration: var(--fa-animation-duration, 1s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+    animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+  }
+
+  .fa-beat-fade {
+    -webkit-animation-name: fa-beat-fade;
+    animation-name: fa-beat-fade;
+    -webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+    -webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+    -webkit-animation-duration: var(--fa-animation-duration, 1s);
+    animation-duration: var(--fa-animation-duration, 1s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+    animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+  }
+
+  .fa-flip {
+    -webkit-animation-name: fa-flip;
+    animation-name: fa-flip;
+    -webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+    -webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+    -webkit-animation-duration: var(--fa-animation-duration, 1s);
+    animation-duration: var(--fa-animation-duration, 1s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    animation-timing-function: var(--fa-animation-timing, ease-in-out);
+  }
+
+  .fa-shake {
+    -webkit-animation-name: fa-shake;
+    animation-name: fa-shake;
+    -webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+    -webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+    -webkit-animation-duration: var(--fa-animation-duration, 1s);
+    animation-duration: var(--fa-animation-duration, 1s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+    animation-timing-function: var(--fa-animation-timing, linear);
+  }
+
+  .fa-spin {
+    -webkit-animation-name: fa-spin;
+    animation-name: fa-spin;
+    -webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+    -webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+    -webkit-animation-duration: var(--fa-animation-duration, 2s);
+    animation-duration: var(--fa-animation-duration, 2s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+    animation-timing-function: var(--fa-animation-timing, linear);
+  }
+
+  .fa-spin-reverse {
+    --fa-animation-direction: reverse;
+  }
+
+  .fa-pulse,
+  .fa-spin-pulse {
+    -webkit-animation-name: fa-spin;
+    animation-name: fa-spin;
+    -webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+    -webkit-animation-duration: var(--fa-animation-duration, 1s);
+    animation-duration: var(--fa-animation-duration, 1s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+    animation-timing-function: var(--fa-animation-timing, steps(8));
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fa-beat,
+    .fa-bounce,
+    .fa-fade,
+    .fa-beat-fade,
+    .fa-flip,
+    .fa-pulse,
+    .fa-shake,
+    .fa-spin,
+    .fa-spin-pulse {
+      -webkit-animation-delay: -1ms;
+      animation-delay: -1ms;
+      -webkit-animation-duration: 1ms;
+      animation-duration: 1ms;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+      -webkit-transition-duration: 0s;
+      transition-duration: 0s;
+    }
+  }
+
+  @-webkit-keyframes fa-beat {
+    0%, 90% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    45% {
+      -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+      transform: scale(var(--fa-beat-scale, 1.25));
+    }
+  }
+
+  @keyframes fa-beat {
+    0%, 90% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    45% {
+      -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+      transform: scale(var(--fa-beat-scale, 1.25));
+    }
+  }
+
+  @-webkit-keyframes fa-bounce {
+    0% {
+      -webkit-transform: scale(1, 1) translateY(0);
+      transform: scale(1, 1) translateY(0);
+    }
+    10% {
+      -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+      transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+    }
+    30% {
+      -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+      transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+    }
+    50% {
+      -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+      transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+    }
+    57% {
+      -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+      transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+    }
+    64% {
+      -webkit-transform: scale(1, 1) translateY(0);
+      transform: scale(1, 1) translateY(0);
+    }
+    100% {
+      -webkit-transform: scale(1, 1) translateY(0);
+      transform: scale(1, 1) translateY(0);
+    }
+  }
+
+  @keyframes fa-bounce {
+    0% {
+      -webkit-transform: scale(1, 1) translateY(0);
+      transform: scale(1, 1) translateY(0);
+    }
+    10% {
+      -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+      transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+    }
+    30% {
+      -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+      transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+    }
+    50% {
+      -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+      transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+    }
+    57% {
+      -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+      transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+    }
+    64% {
+      -webkit-transform: scale(1, 1) translateY(0);
+      transform: scale(1, 1) translateY(0);
+    }
+    100% {
+      -webkit-transform: scale(1, 1) translateY(0);
+      transform: scale(1, 1) translateY(0);
+    }
+  }
+
+  @-webkit-keyframes fa-fade {
+    50% {
+      opacity: var(--fa-fade-opacity, 0.4);
+    }
+  }
+
+  @keyframes fa-fade {
+    50% {
+      opacity: var(--fa-fade-opacity, 0.4);
+    }
+  }
+
+  @-webkit-keyframes fa-beat-fade {
+    0%, 100% {
+      opacity: var(--fa-beat-fade-opacity, 0.4);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+      transform: scale(var(--fa-beat-fade-scale, 1.125));
+    }
+  }
+
+  @keyframes fa-beat-fade {
+    0%, 100% {
+      opacity: var(--fa-beat-fade-opacity, 0.4);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+      transform: scale(var(--fa-beat-fade-scale, 1.125));
+    }
+  }
+
+  @-webkit-keyframes fa-flip {
+    50% {
+      -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+      transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+    }
+  }
+
+  @keyframes fa-flip {
+    50% {
+      -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+      transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+    }
+  }
+
+  @-webkit-keyframes fa-shake {
+    0% {
+      -webkit-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+    }
+    4% {
+      -webkit-transform: rotate(15deg);
+      transform: rotate(15deg);
+    }
+    8%, 24% {
+      -webkit-transform: rotate(-18deg);
+      transform: rotate(-18deg);
+    }
+    12%, 28% {
+      -webkit-transform: rotate(18deg);
+      transform: rotate(18deg);
+    }
+    16% {
+      -webkit-transform: rotate(-22deg);
+      transform: rotate(-22deg);
+    }
+    20% {
+      -webkit-transform: rotate(22deg);
+      transform: rotate(22deg);
+    }
+    32% {
+      -webkit-transform: rotate(-12deg);
+      transform: rotate(-12deg);
+    }
+    36% {
+      -webkit-transform: rotate(12deg);
+      transform: rotate(12deg);
+    }
+    40%, 100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes fa-shake {
+    0% {
+      -webkit-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+    }
+    4% {
+      -webkit-transform: rotate(15deg);
+      transform: rotate(15deg);
+    }
+    8%, 24% {
+      -webkit-transform: rotate(-18deg);
+      transform: rotate(-18deg);
+    }
+    12%, 28% {
+      -webkit-transform: rotate(18deg);
+      transform: rotate(18deg);
+    }
+    16% {
+      -webkit-transform: rotate(-22deg);
+      transform: rotate(-22deg);
+    }
+    20% {
+      -webkit-transform: rotate(22deg);
+      transform: rotate(22deg);
+    }
+    32% {
+      -webkit-transform: rotate(-12deg);
+      transform: rotate(-12deg);
+    }
+    36% {
+      -webkit-transform: rotate(12deg);
+      transform: rotate(12deg);
+    }
+    40%, 100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+
+  @-webkit-keyframes fa-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes fa-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  .fa-rotate-90 {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .fa-rotate-180 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .fa-rotate-270 {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+
+  .fa-flip-horizontal {
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+  }
+
+  .fa-flip-vertical {
+    -webkit-transform: scale(1, -1);
+    transform: scale(1, -1);
+  }
+
+  .fa-flip-both,
+  .fa-flip-horizontal.fa-flip-vertical {
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+  }
+
+  .fa-rotate-by {
+    -webkit-transform: rotate(var(--fa-rotate-angle, none));
+    transform: rotate(var(--fa-rotate-angle, none));
+  }
+
+  .fa-stack {
+    display: inline-block;
+    vertical-align: middle;
+    height: 2em;
+    position: relative;
+    width: 2.5em;
+  }
+
+  .fa-stack-1x,
+  .fa-stack-2x {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: var(--fa-stack-z-index, auto);
+  }
+
+  .svg-inline--fa.fa-stack-1x {
+    height: 1em;
+    width: 1.25em;
+  }
+
+  .svg-inline--fa.fa-stack-2x {
+    height: 2em;
+    width: 2.5em;
+  }
+
+  .fa-inverse {
+    color: var(--fa-inverse, #fff);
+  }
+
+  .sr-only,
+  .fa-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .sr-only-focusable:not(:focus),
+  .fa-sr-only-focusable:not(:focus) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .svg-inline--fa .fa-primary {
+    fill: var(--fa-primary-color, currentColor);
+    opacity: var(--fa-primary-opacity, 1);
+  }
+
+  .svg-inline--fa .fa-secondary {
+    fill: var(--fa-secondary-color, currentColor);
+    opacity: var(--fa-secondary-opacity, 0.4);
+  }
+
+  .svg-inline--fa.fa-swap-opacity .fa-primary {
+    opacity: var(--fa-secondary-opacity, 0.4);
+  }
+
+  .svg-inline--fa.fa-swap-opacity .fa-secondary {
+    opacity: var(--fa-primary-opacity, 1);
+  }
+
+  .svg-inline--fa mask .fa-primary,
+  .svg-inline--fa mask .fa-secondary {
+    fill: black;
+  }
+
+  .fad.fa-inverse,
+  .fa-duotone.fa-inverse {
+    color: var(--fa-inverse, #fff);
+  }</style>
+  <link rel="stylesheet" href="/LLM%20Chatlogs/_next/static/css/76306d7a5f8b6416.css" data-precedence="next">
+  <link rel="stylesheet" href="/LLM%20Chatlogs/_next/static/css/bb24523528deb584.css" data-precedence="next">
+  <link rel="stylesheet" href="/LLM%20Chatlogs/_next/static/css/ea925d7952b15d73.css" data-precedence="next">
+  <link rel="stylesheet" href="/LLM%20Chatlogs/_next/static/css/439287f7513c4aa3.css" data-precedence="next">
+  <link rel="stylesheet" href="/LLM%20Chatlogs/_next/static/css/0fb97e640277dba2.css" data-precedence="next">
+  <link rel="stylesheet" href="/LLM%20Chatlogs/_next/static/css/67b0d2e19b16de20.css" data-precedence="next">
+  <title>Claude 3.5 Sonnet Chatlog</title>
+  <link rel="icon" href="/favicons/favicon-16x16.svg" sizes="16x16">
+  <link rel="icon" href="/favicons/favicon-32x32.svg" sizes="32x32">
+  <link rel="icon" href="/favicons/favicon-32x32.svg" sizes="32x32">
+  <meta name="description"
+        content="Shape the Next Generation of AI with your expertise.Get paid training cutting-edge AI on your own schedule">
+  <script src="/LLM%20Chatlogs/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js" nomodule=""></script>
+  <link rel="preload" as="style" href="/LLM%20Chatlogs/_next/static/css/67b0d2e19b16de20.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+</head>
+<body class="scaleui scale-tailwind outlier-theme">
+<div data-is-root-theme="true" data-accent-color="indigo" data-gray-color="slate" data-has-background="true"
+     data-panel-background="translucent" data-radius="medium" data-scaling="100%" class="radix-themes">
+  <div class="absolute right-[20px] top-[20px] z-[10000] overflow-hidden">
+    <div class="rt-Flex rt-r-fd-column rt-r-gap" style="--gap: 8px;"></div>
+  </div>
+  <style> @import 'styles/contributors-colors-to-radix-colors.css'; </style>
+  <script>!function () {
+    try {
+      var d = document.documentElement, c = d.classList;
+      c.remove('light', 'dark');
+      var e = localStorage.getItem('theme');
+      if ('system' === e || (!e && true)) {
+        var t = '(prefers-color-scheme: dark)', m = window.matchMedia(t);
+        if (m.media !== t || m.matches) {
+          d.style.colorScheme = 'dark';
+          c.add('dark')
+        } else {
+          d.style.colorScheme = 'light';
+          c.add('light')
+        }
+      } else if (e) {
+        c.add(e || '')
+      }
+      if (e === 'light' || e === 'dark') d.style.colorScheme = e
+    } catch (e) {
+    }
+  }()</script>
+  <div data-is-root-theme="false" data-accent-color="indigo" data-gray-color="slate" data-has-background="false"
+       data-panel-background="translucent" data-radius="medium" data-scaling="100%" class="radix-themes">
+    <div class="scaleui flex w-screen" style="height: 956px;">
+      <div class="flex-1 min-w-0 flex flex-col transition-[width] duration-300">
+        <header class="h-16 transition-[width] duration-300">
+          <div class="rt-Flex rt-r-fd-row rt-r-ai-center rt-r-jc-end rt-r-gap-1 rt-r-h"
+               style="--height: 100%;">
+            <button data-accent-color="gray" type="button" id="radix-:rf:" aria-haspopup="menu"
+                    aria-expanded="false" data-state="closed"
+                    class="rt-reset rt-BaseButton rt-r-size-3 rt-variant-soft rt-r-m-4 rt-Button focus:outline-none">
+              <div class="rt-Flex rt-r-fd-row rt-r-ai-center rt-r-jc-space-between rt-r-gap-2"><span
+                      data-accent-color="indigo" data-radius="full"
+                      class="rt-reset rt-AvatarRoot rt-r-size-4 rt-variant-soft"><span
+                      class="rt-AvatarFallback rt-two-letters">SS</span></span><span
+                      class="rt-Text rt-r-size-2">Stewart Sankey</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="currentcolor"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.135232 3.15803C0.324102 2.95657 0.640521 2.94637 0.841971 3.13523L4.5 6.56464L8.158 3.13523C8.3595 2.94637 8.6759 2.95657 8.8648 3.15803C9.0536 3.35949 9.0434 3.67591 8.842 3.86477L4.84197 7.6148C4.64964 7.7951 4.35036 7.7951 4.15803 7.6148L0.158031 3.86477C-0.0434285 3.67591 -0.0536285 3.35949 0.135232 3.15803Z"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </header>
+        <main class="flex-1 min-h-0 transition-[width] duration-300">
+          <div class="rt-Flex rt-r-fd-column rt-r-ai-center rt-r-h" style="--height: 100%;">
+            <div class="rt-Box rt-r-w rt-r-overflow-auto rt-r-fg-1" style="--width: 100%;">
+              <div class="rt-Flex rt-r-fd-column rt-r-ai-center rt-r-h rt-r-overflow-auto"
+                   style="--height: 100%;">
+                <div class="rt-Flex rt-r-fd-column rt-r-rg-8 rt-r-w last:pb-16" style="--width: 55%;">
+
+                  <div class="rt-Box bg-neutral-a3 rounded-xl ml-auto py-2 px-4 max-w-[75%]">
+                    <div class="rt-Box overflow-x-auto">
+                      <style>
+                        li pre {
+                          padding: 0 !important;
+                          border-radius: 0.5rem !important;
+                        }
+                      </style>
+                      <div class="prose prose-neutral prose-sm max-w-full [&amp;>pre]:p-0 [&amp;>pre]:rounded-lg">
+                        <p class="!text-neutral-a12" node="[object Object]">I want you to setup
+                          a proof for each of the 2023 Math Olympiad Problems using
+                          Isabelle/HOL</p></div>
+                    </div>
+                  </div>
+                  <div class="rt-Grid rt-r-gap-2 rt-r-w grid-cols-[auto,1fr]" style="--width: 100%;">
+                    <div class="rt-Box"><span data-accent-color="indigo" data-radius="full"
+                                              class="rt-reset rt-AvatarRoot rt-r-size-4 rt-variant-soft"><img
+                            class="rt-AvatarImage"
+                            src="/LLM%20Chatlogs/assets/llm-icons/Claude 3 Sonnet.svg"></span></div>
+                    <span class="rt-Text rt-r-size-3 rt-r-weight-medium rt-r-my pl-1"
+                          style="--mt: auto; --mb: auto;">Claude 3.5 Sonnet</span>
+                    <div class="rt-Box"></div>
+                    <div class="rt-Box rt-r-p-1 overflow-x-auto overflow-y-clip">
+                      <div class="rt-Box overflow-x-auto">
+                        <style>
+                          li pre {
+                            padding: 0 !important;
+                            border-radius: 0.5rem !important;
+                          }
+                        </style>
+                        <div class="prose prose-neutral prose-sm max-w-full [&amp;>pre]:p-0 [&amp;>pre]:rounded-lg">
+                          <p class="!text-neutral-a12" node="[object Object]">I'll help
+                            structure the proofs in Isabelle/HOL. Let's start with Problem
+                            1, and we can work through the others. Note that translating IMO
+                            problems into formal proofs requires careful consideration of
+                            how to represent geometric and algebraic concepts in
+                            Isabelle/HOL's type system.</p>
+                          <p class="!text-neutral-a12" node="[object Object]">For Problem
+                            1:</p>
+                          <pre><div class="group bg-transparent relative px-0 py-0"
+                                    style="overflow: auto;"><div
+                                  class="text-white text-xs font-medium px-3 flex items-center justify-between py-1.5"
+                                  style="background-color: rgb(64, 64, 64); font-family: Inter, sans-serif;"><span>ISABELLE</span><div
+                                  class="flex items-center justify-center"><span><button
+                                  type="button"
+                                  class="group overflow-hidden py-1 pl-2 pr-3 text-xs font-medium backdrop-blur transition bg-neutral-700/30 hover:bg-neutral-700/40"><svg
+                                  aria-hidden="true" focusable="false" data-prefix="far"
+                                  data-icon="clipboard"
+                                  class="svg-inline--fa fa-clipboard w-3 h-3 fill-neutral-300/50 stroke-neutral-300"
+                                  role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 384 512"><path fill="currentColor"
+                                                              d="M280 64h40c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128C0 92.7 28.7 64 64 64h40 9.6C121 27.5 153.3 0 192 0s71 27.5 78.4 64H280zM64 112c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320c8.8 0 16-7.2 16-16V128c0-8.8-7.2-16-16-16H304v24c0 13.3-10.7 24-24 24H192 104c-13.3 0-24-10.7-24-24V112H64zm128-8a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"></path></svg></button></span><button
+                                  class="border ml-1 text-white rounded-md py-1.5 px-2 text-xs flex items-center justify-center"
+                                  style="background-color: rgb(82, 82, 82); border-color: rgb(115, 115, 115);">Collapse<svg
+                                  aria-hidden="true" focusable="false" data-prefix="fas"
+                                  data-icon="chevron-up"
+                                  class="svg-inline--fa fa-chevron-up ml-1" role="img"
+                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path
+                                  fill="currentColor"
+                                  d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg></button></div></div><div><div
+                                  class="p-3"
+                                  style="max-height: none; overflow: auto; mask-image: none;"><div
+                                  style="color: rgb(248, 248, 242); background: none; font-family: &quot;Fira Code&quot;, Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; overflow: auto; border-radius: 0.3em;"><code
+                                  class="language-isabelle"
+                                  style="color: rgb(248, 248, 242); background: none; font-family: &quot;Fira Code&quot;, Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span
+                                  class="linenumber react-syntax-highlighter-line-number"
+                                  style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">1</span><span>theory IMO2023_Problem1
+</span><span class="linenumber react-syntax-highlighter-line-number"
+             style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">2</span>imports Complex_Main
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">3</span>begin
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">4</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">5</span>(* First, we need to define points in the plane using complex numbers *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">6</span>type_synonym point = complex
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">7</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">8</span>(* We'll need some helper functions for geometric concepts *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">9</span>definition distance :: "point ⇒ point ⇒ real"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">10</span>  where "distance p q = norm (p - q)"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">11</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">12</span>(* Define what it means for points to be on a circle *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">13</span>definition on_circle :: "point ⇒ point ⇒ real ⇒ bool"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">14</span>  where "on_circle center p r ≡ (distance center p = r)"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">15</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">16</span>(* Main theorem statement *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">17</span>theorem imo2023_p1:
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">18</span>  fixes A B C D E P :: point
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">19</span>  assumes "D ∈ line B C"    (* D lies on BC *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">20</span>    and "E ∈ line C A"      (* E lies on CA *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">21</span>    and "P ∈ line A D"      (* P lies on AD *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">22</span>    and "P ∈ line B E"      (* P lies on BE *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">23</span>    and "P ∈ circle A D E"  (* P lies on circle through A,D,E *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">24</span>  shows "norm(A - P) * norm(B - P) = norm(C - P)^2"</code></div></div></div></div></pre>
+                          <p class="!text-neutral-a12" node="[object Object]">For Problem
+                            2:</p>
+                          <pre><div class="group bg-transparent relative px-0 py-0"
+                                    style="overflow: auto;"><div
+                                  class="text-white text-xs font-medium px-3 flex items-center justify-between py-1.5"
+                                  style="background-color: rgb(64, 64, 64); font-family: Inter, sans-serif;"><span>ISABELLE</span><div
+                                  class="flex items-center justify-center"><span><button
+                                  type="button"
+                                  class="group overflow-hidden py-1 pl-2 pr-3 text-xs font-medium backdrop-blur transition bg-neutral-700/30 hover:bg-neutral-700/40"><svg
+                                  aria-hidden="true" focusable="false" data-prefix="far"
+                                  data-icon="clipboard"
+                                  class="svg-inline--fa fa-clipboard w-3 h-3 fill-neutral-300/50 stroke-neutral-300"
+                                  role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 384 512"><path fill="currentColor"
+                                                              d="M280 64h40c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128C0 92.7 28.7 64 64 64h40 9.6C121 27.5 153.3 0 192 0s71 27.5 78.4 64H280zM64 112c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320c8.8 0 16-7.2 16-16V128c0-8.8-7.2-16-16-16H304v24c0 13.3-10.7 24-24 24H192 104c-13.3 0-24-10.7-24-24V112H64zm128-8a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"></path></svg></button></span></div></div><div><div
+                                  class="p-3"
+                                  style="max-height: none; overflow: auto; mask-image: none;"><div
+                                  style="color: rgb(248, 248, 242); background: none; font-family: &quot;Fira Code&quot;, Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; overflow: auto; border-radius: 0.3em;"><code
+                                  class="language-isabelle"
+                                  style="color: rgb(248, 248, 242); background: none; font-family: &quot;Fira Code&quot;, Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span
+                                  class="linenumber react-syntax-highlighter-line-number"
+                                  style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">1</span><span>theory IMO2023_Problem2
+</span><span class="linenumber react-syntax-highlighter-line-number"
+             style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">2</span>imports Complex_Main
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">3</span>begin
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">4</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">5</span>(* Define the function type we're looking for *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">6</span>typedef pos_real = "{x::real. x &gt; 0}"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">7</span>  morphisms real_of_pos pos_of_real
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">8</span>  by auto
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">9</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">10</span>(* Main theorem statement *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">11</span>theorem imo2023_p2:
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">12</span>  fixes f :: "pos_real ⇒ pos_real"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">13</span>  assumes "∀x y. real_of_pos (f x) * real_of_pos (f y) =
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">14</span>          real_of_pos (f (pos_of_real (real_of_pos x * real_of_pos (f y))))"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">15</span>  shows "f = (λx. pos_of_real 1) ∨ f = (λx. x)"</code></div></div></div></div></pre>
+                          <p class="!text-neutral-a12" node="[object Object]">For Problem
+                            3:</p>
+                          <pre><div class="group bg-transparent relative px-0 py-0"
+                                    style="overflow: auto;"><div
+                                  class="text-white text-xs font-medium px-3 flex items-center justify-between py-1.5"
+                                  style="background-color: rgb(64, 64, 64); font-family: Inter, sans-serif;"><span>ISABELLE</span><div
+                                  class="flex items-center justify-center"><span><button
+                                  type="button"
+                                  class="group overflow-hidden py-1 pl-2 pr-3 text-xs font-medium backdrop-blur transition bg-neutral-700/30 hover:bg-neutral-700/40"><svg
+                                  aria-hidden="true" focusable="false" data-prefix="far"
+                                  data-icon="clipboard"
+                                  class="svg-inline--fa fa-clipboard w-3 h-3 fill-neutral-300/50 stroke-neutral-300"
+                                  role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 384 512"><path fill="currentColor"
+                                                              d="M280 64h40c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128C0 92.7 28.7 64 64 64h40 9.6C121 27.5 153.3 0 192 0s71 27.5 78.4 64H280zM64 112c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320c8.8 0 16-7.2 16-16V128c0-8.8-7.2-16-16-16H304v24c0 13.3-10.7 24-24 24H192 104c-13.3 0-24-10.7-24-24V112H64zm128-8a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"></path></svg></button></span><button
+                                  class="border ml-1 text-white rounded-md py-1.5 px-2 text-xs flex items-center justify-center"
+                                  style="background-color: rgb(82, 82, 82); border-color: rgb(115, 115, 115);">Collapse<svg
+                                  aria-hidden="true" focusable="false" data-prefix="fas"
+                                  data-icon="chevron-up"
+                                  class="svg-inline--fa fa-chevron-up ml-1" role="img"
+                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path
+                                  fill="currentColor"
+                                  d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg></button></div></div><div><div
+                                  class="p-3"
+                                  style="max-height: none; overflow: auto; mask-image: none;"><div
+                                  style="color: rgb(248, 248, 242); background: none; font-family: &quot;Fira Code&quot;, Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; overflow: auto; border-radius: 0.3em;"><code
+                                  class="language-isabelle"
+                                  style="color: rgb(248, 248, 242); background: none; font-family: &quot;Fira Code&quot;, Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span
+                                  class="linenumber react-syntax-highlighter-line-number"
+                                  style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">1</span><span>theory IMO2023_Problem3
+</span><span class="linenumber react-syntax-highlighter-line-number"
+             style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">2</span>imports Main
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">3</span>begin
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">4</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">5</span>(* Define the grid state as a set of coordinates *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">6</span>type_synonym position = "nat × nat"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">7</span>type_synonym game_state = "position set"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">8</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">9</span>(* Define valid moves *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">10</span>definition valid_move :: "game_state ⇒ position ⇒ position ⇒ bool"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">11</span>  where "valid_move state from to ≡
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">12</span>    from ∈ state ∧
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">13</span>    to ∉ state ∧
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">14</span>    fst to = fst from + 1 ∧
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">15</span>    snd to = snd from ∧
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">16</span>    (∃p∈state. fst p = fst from ∧ snd p = snd from + 1)"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">17</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">18</span>(* Main theorem statement *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">19</span>theorem imo2023_p3:
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">20</span>  fixes n :: nat
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">21</span>  shows "max_moves n = n * (n - 1) div 2"</code></div></div></div></div></pre>
+                          <p class="!text-neutral-a12" node="[object Object]">For Problem
+                            4:</p>
+                          <pre><div class="group bg-transparent relative px-0 py-0"
+                                    style="overflow: auto;"><div
+                                  class="text-white text-xs font-medium px-3 flex items-center justify-between py-1.5"
+                                  style="background-color: rgb(64, 64, 64); font-family: Inter, sans-serif;"><span>ISABELLE</span><div
+                                  class="flex items-center justify-center"><span><button
+                                  type="button"
+                                  class="group overflow-hidden py-1 pl-2 pr-3 text-xs font-medium backdrop-blur transition bg-neutral-700/30 hover:bg-neutral-700/40"><svg
+                                  aria-hidden="true" focusable="false" data-prefix="far"
+                                  data-icon="clipboard"
+                                  class="svg-inline--fa fa-clipboard w-3 h-3 fill-neutral-300/50 stroke-neutral-300"
+                                  role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 384 512"><path fill="currentColor"
+                                                              d="M280 64h40c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128C0 92.7 28.7 64 64 64h40 9.6C121 27.5 153.3 0 192 0s71 27.5 78.4 64H280zM64 112c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320c8.8 0 16-7.2 16-16V128c0-8.8-7.2-16-16-16H304v24c0 13.3-10.7 24-24 24H192 104c-13.3 0-24-10.7-24-24V112H64zm128-8a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"></path></svg></button></span></div></div><div><div
+                                  class="p-3"
+                                  style="max-height: none; overflow: auto; mask-image: none;"><div
+                                  style="color: rgb(248, 248, 242); background: none; font-family: &quot;Fira Code&quot;, Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; overflow: auto; border-radius: 0.3em;"><code
+                                  class="language-isabelle"
+                                  style="color: rgb(248, 248, 242); background: none; font-family: &quot;Fira Code&quot;, Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span
+                                  class="linenumber react-syntax-highlighter-line-number"
+                                  style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">1</span><span>theory IMO2023_Problem4
+</span><span class="linenumber react-syntax-highlighter-line-number"
+             style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">2</span>imports Complex_Main
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">3</span>begin
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">4</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">5</span>(* Main theorem statement *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">6</span>theorem imo2023_p4:
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">7</span>  fixes f :: "real ⇒ real"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">8</span>  assumes "∀x y. f(x + y + f(x*y)) = f(x) * f(y)"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">9</span>  shows "f = (λx. 0) ∨ f = (λx. 1)"</code></div></div></div></div></pre>
+                          <p class="!text-neutral-a12" node="[object Object]">For Problem
+                            5:</p>
+                          <pre><div class="group bg-transparent relative px-0 py-0"
+                                    style="overflow: auto;"><div
+                                  class="text-white text-xs font-medium px-3 flex items-center justify-between py-1.5"
+                                  style="background-color: rgb(64, 64, 64); font-family: Inter, sans-serif;"><span>ISABELLE</span><div
+                                  class="flex items-center justify-center"><span><button
+                                  type="button"
+                                  class="group overflow-hidden py-1 pl-2 pr-3 text-xs font-medium backdrop-blur transition bg-neutral-700/30 hover:bg-neutral-700/40"><svg
+                                  aria-hidden="true" focusable="false" data-prefix="far"
+                                  data-icon="clipboard"
+                                  class="svg-inline--fa fa-clipboard w-3 h-3 fill-neutral-300/50 stroke-neutral-300"
+                                  role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 384 512"><path fill="currentColor"
+                                                              d="M280 64h40c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128C0 92.7 28.7 64 64 64h40 9.6C121 27.5 153.3 0 192 0s71 27.5 78.4 64H280zM64 112c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320c8.8 0 16-7.2 16-16V128c0-8.8-7.2-16-16-16H304v24c0 13.3-10.7 24-24 24H192 104c-13.3 0-24-10.7-24-24V112H64zm128-8a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"></path></svg></button></span><button
+                                  class="border ml-1 text-white rounded-md py-1.5 px-2 text-xs flex items-center justify-center"
+                                  style="background-color: rgb(82, 82, 82); border-color: rgb(115, 115, 115);">Collapse<svg
+                                  aria-hidden="true" focusable="false" data-prefix="fas"
+                                  data-icon="chevron-up"
+                                  class="svg-inline--fa fa-chevron-up ml-1" role="img"
+                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path
+                                  fill="currentColor"
+                                  d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg></button></div></div><div><div
+                                  class="p-3"
+                                  style="max-height: none; overflow: auto; mask-image: none;"><div
+                                  style="color: rgb(248, 248, 242); background: none; font-family: &quot;Fira Code&quot;, Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; overflow: auto; border-radius: 0.3em;"><code
+                                  class="language-isabelle"
+                                  style="color: rgb(248, 248, 242); background: none; font-family: &quot;Fira Code&quot;, Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span
+                                  class="linenumber react-syntax-highlighter-line-number"
+                                  style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">1</span><span>theory IMO2023_Problem5
+</span><span class="linenumber react-syntax-highlighter-line-number"
+             style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">2</span>imports Complex_Main
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">3</span>begin
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">4</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">5</span>(* Define geometric predicates *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">6</span>definition perpendicular :: "point ⇒ point ⇒ point ⇒ point ⇒ bool"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">7</span>  where "perpendicular A B C D ≡
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">8</span>    Re((B - A) * cnj(D - C)) = 0"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">9</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">10</span>(* Main theorem statement *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">11</span>theorem imo2023_p5:
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">12</span>  fixes A B C O P F G :: point
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">13</span>  assumes "O = circumcenter A B C"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">14</span>    and "D ∈ line B C"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">15</span>    and "E ∈ line C A"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">16</span>    and "P ∈ line A D"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">17</span>    and "P ∈ line B E"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">18</span>    and "perpendicular P F B C"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">19</span>    and "perpendicular P G C A"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">20</span>  shows "concyclic O P F G"</code></div></div></div></div></pre>
+                          <p class="!text-neutral-a12" node="[object Object]">For Problem
+                            6:</p>
+                          <pre><div class="group bg-transparent relative px-0 py-0"
+                                    style="overflow: auto;"><div
+                                  class="text-white text-xs font-medium px-3 flex items-center justify-between py-1.5"
+                                  style="background-color: rgb(64, 64, 64); font-family: Inter, sans-serif;"><span>ISABELLE</span><div
+                                  class="flex items-center justify-center"><span><button
+                                  type="button"
+                                  class="group overflow-hidden py-1 pl-2 pr-3 text-xs font-medium backdrop-blur transition bg-neutral-700/30 hover:bg-neutral-700/40"><svg
+                                  aria-hidden="true" focusable="false" data-prefix="far"
+                                  data-icon="clipboard"
+                                  class="svg-inline--fa fa-clipboard w-3 h-3 fill-neutral-300/50 stroke-neutral-300"
+                                  role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 384 512"><path fill="currentColor"
+                                                              d="M280 64h40c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128C0 92.7 28.7 64 64 64h40 9.6C121 27.5 153.3 0 192 0s71 27.5 78.4 64H280zM64 112c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320c8.8 0 16-7.2 16-16V128c0-8.8-7.2-16-16-16H304v24c0 13.3-10.7 24-24 24H192 104c-13.3 0-24-10.7-24-24V112H64zm128-8a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"></path></svg></button></span><button
+                                  class="border ml-1 text-white rounded-md py-1.5 px-2 text-xs flex items-center justify-center"
+                                  style="background-color: rgb(82, 82, 82); border-color: rgb(115, 115, 115);">Collapse<svg
+                                  aria-hidden="true" focusable="false" data-prefix="fas"
+                                  data-icon="chevron-up"
+                                  class="svg-inline--fa fa-chevron-up ml-1" role="img"
+                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path
+                                  fill="currentColor"
+                                  d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg></button></div></div><div><div
+                                  class="p-3"
+                                  style="max-height: none; overflow: auto; mask-image: none;"><div
+                                  style="color: rgb(248, 248, 242); background: none; font-family: &quot;Fira Code&quot;, Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; overflow: auto; border-radius: 0.3em;"><code
+                                  class="language-isabelle"
+                                  style="color: rgb(248, 248, 242); background: none; font-family: &quot;Fira Code&quot;, Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span
+                                  class="linenumber react-syntax-highlighter-line-number"
+                                  style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">1</span><span>theory IMO2023_Problem6
+</span><span class="linenumber react-syntax-highlighter-line-number"
+             style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">2</span>imports Main
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">3</span>begin
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">4</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">5</span>(* Define the grid as a function from coordinates to stone count *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">6</span>type_synonym grid = "nat ⇒ nat ⇒ nat"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">7</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">8</span>(* Define valid moves *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">9</span>definition valid_move :: "grid ⇒ nat × nat ⇒ nat × nat ⇒ bool"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">10</span>  where "valid_move g from to ≡
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">11</span>    g (fst from) (snd from) = 1 ∧
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">12</span>    g (fst to) (snd to) = 0 ∧
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">13</span>    adjacent from to"
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">14</span>
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">15</span>(* Main theorem statement *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">16</span>theorem imo2023_p6:
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">17</span>  fixes n :: nat
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">18</span>  assumes "initial_stones g n"  (* g has exactly n stones *)
+<span class="linenumber react-syntax-highlighter-line-number"
+      style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none; color: rgb(99, 111, 136);">19</span>  shows "∃g'. reachable g g' ∧ (row_aligned g' ∨ column_aligned g')"</code></div></div></div></div></pre>
+                          <p class="!text-neutral-a12" node="[object Object]">These are
+                            initial setups for formal proofs. Each would need:</p>
+                          <ol class="!text-neutral-a12" depth="0" node="[object Object]">
+                            <li class="!text-neutral-a12" index="0" node="[object Object]">
+                              Additional helper lemmas
+                            </li>
+                            <li class="!text-neutral-a12" index="1" node="[object Object]">
+                              Detailed proof steps
+                            </li>
+                            <li class="!text-neutral-a12" index="2" node="[object Object]">
+                              More precise definitions
+                            </li>
+                            <li class="!text-neutral-a12" index="3" node="[object Object]">
+                              Proper handling of edge cases
+                            </li>
+                          </ol>
+                          <p class="!text-neutral-a12" node="[object Object]">Would you like
+                            me to elaborate on any particular problem's formal proof
+                            structure or continue with the actual proof development for any
+                            of these?</p></div>
+                      </div>
+                      <div class="rt-Flex rt-r-fd-column rt-r-gap-4 rt-r-pt-4">
+                        <div class="rt-Flex rt-r-fd-row rt-r-ai-center rt-r-gap-3">
+                          <button data-accent-color="gray"
+                                  class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-ghost rt-IconButton bg-transparent transition-all duration-150 ease-in-out hover:scale-[1.15] active:scale-[1] cursor-pointer">
+                            <svg aria-hidden="true" focusable="false" data-prefix="far"
+                                 data-icon="copy" class="svg-inline--fa fa-copy " role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                              <path fill="currentColor"
+                                    d="M384 336H192c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16l140.1 0L400 115.9V320c0 8.8-7.2 16-16 16zM192 384H384c35.3 0 64-28.7 64-64V115.9c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1H192c-35.3 0-64 28.7-64 64V320c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H256c35.3 0 64-28.7 64-64V416H272v32c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192c0-8.8 7.2-16 16-16H96V128H64z"></path>
+                            </svg>
+                          </button>
+                          <div data-state="closed"
+                               class="rt-Flex rt-r-fd-row rt-r-ai-center rt-r-gap-3">
+                            <button data-accent-color="gray"
+                                    class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-ghost rt-IconButton bg-transparent transition-all duration-150 ease-in-out hover:scale-[1.15] active:scale-[1] cursor-pointer">
+                              <svg aria-hidden="true" focusable="false" data-prefix="far"
+                                   data-icon="thumbs-up"
+                                   class="svg-inline--fa fa-thumbs-up " role="img"
+                                   xmlns="http://www.w3.org/2000/svg"
+                                   viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                      d="M323.8 34.8c-38.2-10.9-78.1 11.2-89 49.4l-5.7 20c-3.7 13-10.4 25-19.5 35l-51.3 56.4c-8.9 9.8-8.2 25 1.6 33.9s25 8.2 33.9-1.6l51.3-56.4c14.1-15.5 24.4-34 30.1-54.1l5.7-20c3.6-12.7 16.9-20.1 29.7-16.5s20.1 16.9 16.5 29.7l-5.7 20c-5.7 19.9-14.7 38.7-26.6 55.5c-5.2 7.3-5.8 16.9-1.7 24.9s12.3 13 21.3 13L448 224c8.8 0 16 7.2 16 16c0 6.8-4.3 12.7-10.4 15c-7.4 2.8-13 9-14.9 16.7s.1 15.8 5.3 21.7c2.5 2.8 4 6.5 4 10.6c0 7.8-5.6 14.3-13 15.7c-8.2 1.6-15.1 7.3-18 15.2s-1.6 16.7 3.6 23.3c2.1 2.7 3.4 6.1 3.4 9.9c0 6.7-4.2 12.6-10.2 14.9c-11.5 4.5-17.7 16.9-14.4 28.8c.4 1.3 .6 2.8 .6 4.3c0 8.8-7.2 16-16 16H286.5c-12.6 0-25-3.7-35.5-10.7l-61.7-41.1c-11-7.4-25.9-4.4-33.3 6.7s-4.4 25.9 6.7 33.3l61.7 41.1c18.4 12.3 40 18.8 62.1 18.8H384c34.7 0 62.9-27.6 64-62c14.6-11.7 24-29.7 24-50c0-4.5-.5-8.8-1.3-13c15.4-11.7 25.3-30.2 25.3-51c0-6.5-1-12.8-2.8-18.7C504.8 273.7 512 257.7 512 240c0-35.3-28.6-64-64-64l-92.3 0c4.7-10.4 8.7-21.2 11.8-32.2l5.7-20c10.9-38.2-11.2-78.1-49.4-89zM32 192c-17.7 0-32 14.3-32 32V448c0 17.7 14.3 32 32 32H96c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32H32z"></path>
+                              </svg>
+                            </button>
+                            <button data-accent-color="gray"
+                                    class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-ghost rt-IconButton bg-transparent transition-all duration-150 ease-in-out hover:scale-[1.15] active:scale-[1] cursor-pointer">
+                              <svg aria-hidden="true" focusable="false" data-prefix="far"
+                                   data-icon="thumbs-down"
+                                   class="svg-inline--fa fa-thumbs-down " role="img"
+                                   xmlns="http://www.w3.org/2000/svg"
+                                   viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                      d="M323.8 477.2c-38.2 10.9-78.1-11.2-89-49.4l-5.7-20c-3.7-13-10.4-25-19.5-35l-51.3-56.4c-8.9-9.8-8.2-25 1.6-33.9s25-8.2 33.9 1.6l51.3 56.4c14.1 15.5 24.4 34 30.1 54.1l5.7 20c3.6 12.7 16.9 20.1 29.7 16.5s20.1-16.9 16.5-29.7l-5.7-20c-5.7-19.9-14.7-38.7-26.6-55.5c-5.2-7.3-5.8-16.9-1.7-24.9s12.3-13 21.3-13L448 288c8.8 0 16-7.2 16-16c0-6.8-4.3-12.7-10.4-15c-7.4-2.8-13-9-14.9-16.7s.1-15.8 5.3-21.7c2.5-2.8 4-6.5 4-10.6c0-7.8-5.6-14.3-13-15.7c-8.2-1.6-15.1-7.3-18-15.2s-1.6-16.7 3.6-23.3c2.1-2.7 3.4-6.1 3.4-9.9c0-6.7-4.2-12.6-10.2-14.9c-11.5-4.5-17.7-16.9-14.4-28.8c.4-1.3 .6-2.8 .6-4.3c0-8.8-7.2-16-16-16H286.5c-12.6 0-25 3.7-35.5 10.7l-61.7 41.1c-11 7.4-25.9 4.4-33.3-6.7s-4.4-25.9 6.7-33.3l61.7-41.1c18.4-12.3 40-18.8 62.1-18.8H384c34.7 0 62.9 27.6 64 62c14.6 11.7 24 29.7 24 50c0 4.5-.5 8.8-1.3 13c15.4 11.7 25.3 30.2 25.3 51c0 6.5-1 12.8-2.8 18.7C504.8 238.3 512 254.3 512 272c0 35.3-28.6 64-64 64l-92.3 0c4.7 10.4 8.7 21.2 11.8 32.2l5.7 20c10.9 38.2-11.2 78.1-49.4 89zM32 384c-17.7 0-32-14.3-32-32V128c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H32z"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rt-Box bg-neutral-a3 rounded-xl ml-auto py-2 px-4 max-w-[75%]">
+                    <div class="rt-Box overflow-x-auto">
+                      <style>
+                        li pre {
+                          padding: 0 !important;
+                          border-radius: 0.5rem !important;
+                        }
+                      </style>
+                      <div class="prose prose-neutral prose-sm max-w-full [&amp;>pre]:p-0 [&amp;>pre]:rounded-lg">
+                        <p class="!text-neutral-a12" node="[object Object]">No, that will be
+                          all. Thank you.</p></div>
+                    </div>
+                  </div>
+                  <div class="rt-Grid rt-r-gap-2 rt-r-w grid-cols-[auto,1fr]" style="--width: 100%;">
+                    <div class="rt-Box"><span data-accent-color="indigo" data-radius="full"
+                                              class="rt-reset rt-AvatarRoot rt-r-size-4 rt-variant-soft"><img
+                            class="rt-AvatarImage"
+                            src="/LLM%20Chatlogs/assets/llm-icons/Claude 3 Sonnet.svg"></span></div>
+                    <span class="rt-Text rt-r-size-3 rt-r-weight-medium rt-r-my pl-1"
+                          style="--mt: auto; --mb: auto;">Claude 3.5 Sonnet</span>
+                    <div class="rt-Box"></div>
+                    <div class="rt-Box rt-r-p-1 overflow-x-auto overflow-y-clip">
+                      <div class="rt-Box overflow-x-auto">
+                        <style>
+                          li pre {
+                            padding: 0 !important;
+                            border-radius: 0.5rem !important;
+                          }
+                        </style>
+                        <div class="prose prose-neutral prose-sm max-w-full [&amp;>pre]:p-0 [&amp;>pre]:rounded-lg">
+                          <p class="!text-neutral-a12" node="[object Object]">You're welcome!
+                            If you ever want to dive deeper into formal proofs using
+                            Isabelle/HOL or discuss other IMO problems, feel free to ask.
+                            Good luck with your mathematical endeavors!</p></div>
+                      </div>
+                      <div class="rt-Flex rt-r-fd-column rt-r-gap-4 rt-r-pt-4">
+                        <div class="rt-Flex rt-r-fd-row rt-r-ai-center rt-r-gap-3">
+                          <button data-accent-color="gray"
+                                  class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-ghost rt-IconButton bg-transparent transition-all duration-150 ease-in-out hover:scale-[1.15] active:scale-[1] cursor-pointer">
+                            <svg aria-hidden="true" focusable="false" data-prefix="far"
+                                 data-icon="copy" class="svg-inline--fa fa-copy " role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                              <path fill="currentColor"
+                                    d="M384 336H192c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16l140.1 0L400 115.9V320c0 8.8-7.2 16-16 16zM192 384H384c35.3 0 64-28.7 64-64V115.9c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1H192c-35.3 0-64 28.7-64 64V320c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H256c35.3 0 64-28.7 64-64V416H272v32c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192c0-8.8 7.2-16 16-16H96V128H64z"></path>
+                            </svg>
+                          </button>
+                          <div data-state="closed"
+                               class="rt-Flex rt-r-fd-row rt-r-ai-center rt-r-gap-3">
+                            <button data-accent-color="gray"
+                                    class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-ghost rt-IconButton bg-transparent transition-all duration-150 ease-in-out hover:scale-[1.15] active:scale-[1] cursor-pointer">
+                              <svg aria-hidden="true" focusable="false" data-prefix="far"
+                                   data-icon="thumbs-up"
+                                   class="svg-inline--fa fa-thumbs-up " role="img"
+                                   xmlns="http://www.w3.org/2000/svg"
+                                   viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                      d="M323.8 34.8c-38.2-10.9-78.1 11.2-89 49.4l-5.7 20c-3.7 13-10.4 25-19.5 35l-51.3 56.4c-8.9 9.8-8.2 25 1.6 33.9s25 8.2 33.9-1.6l51.3-56.4c14.1-15.5 24.4-34 30.1-54.1l5.7-20c3.6-12.7 16.9-20.1 29.7-16.5s20.1 16.9 16.5 29.7l-5.7 20c-5.7 19.9-14.7 38.7-26.6 55.5c-5.2 7.3-5.8 16.9-1.7 24.9s12.3 13 21.3 13L448 224c8.8 0 16 7.2 16 16c0 6.8-4.3 12.7-10.4 15c-7.4 2.8-13 9-14.9 16.7s.1 15.8 5.3 21.7c2.5 2.8 4 6.5 4 10.6c0 7.8-5.6 14.3-13 15.7c-8.2 1.6-15.1 7.3-18 15.2s-1.6 16.7 3.6 23.3c2.1 2.7 3.4 6.1 3.4 9.9c0 6.7-4.2 12.6-10.2 14.9c-11.5 4.5-17.7 16.9-14.4 28.8c.4 1.3 .6 2.8 .6 4.3c0 8.8-7.2 16-16 16H286.5c-12.6 0-25-3.7-35.5-10.7l-61.7-41.1c-11-7.4-25.9-4.4-33.3 6.7s-4.4 25.9 6.7 33.3l61.7 41.1c18.4 12.3 40 18.8 62.1 18.8H384c34.7 0 62.9-27.6 64-62c14.6-11.7 24-29.7 24-50c0-4.5-.5-8.8-1.3-13c15.4-11.7 25.3-30.2 25.3-51c0-6.5-1-12.8-2.8-18.7C504.8 273.7 512 257.7 512 240c0-35.3-28.6-64-64-64l-92.3 0c4.7-10.4 8.7-21.2 11.8-32.2l5.7-20c10.9-38.2-11.2-78.1-49.4-89zM32 192c-17.7 0-32 14.3-32 32V448c0 17.7 14.3 32 32 32H96c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32H32z"></path>
+                              </svg>
+                            </button>
+                            <button data-accent-color="gray"
+                                    class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-ghost rt-IconButton bg-transparent transition-all duration-150 ease-in-out hover:scale-[1.15] active:scale-[1] cursor-pointer">
+                              <svg aria-hidden="true" focusable="false" data-prefix="far"
+                                   data-icon="thumbs-down"
+                                   class="svg-inline--fa fa-thumbs-down " role="img"
+                                   xmlns="http://www.w3.org/2000/svg"
+                                   viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                      d="M323.8 477.2c-38.2 10.9-78.1-11.2-89-49.4l-5.7-20c-3.7-13-10.4-25-19.5-35l-51.3-56.4c-8.9-9.8-8.2-25 1.6-33.9s25-8.2 33.9 1.6l51.3 56.4c14.1 15.5 24.4 34 30.1 54.1l5.7 20c3.6 12.7 16.9 20.1 29.7 16.5s20.1-16.9 16.5-29.7l-5.7-20c-5.7-19.9-14.7-38.7-26.6-55.5c-5.2-7.3-5.8-16.9-1.7-24.9s12.3-13 21.3-13L448 288c8.8 0 16-7.2 16-16c0-6.8-4.3-12.7-10.4-15c-7.4-2.8-13-9-14.9-16.7s.1-15.8 5.3-21.7c2.5-2.8 4-6.5 4-10.6c0-7.8-5.6-14.3-13-15.7c-8.2-1.6-15.1-7.3-18-15.2s-1.6-16.7 3.6-23.3c2.1-2.7 3.4-6.1 3.4-9.9c0-6.7-4.2-12.6-10.2-14.9c-11.5-4.5-17.7-16.9-14.4-28.8c.4-1.3 .6-2.8 .6-4.3c0-8.8-7.2-16-16-16H286.5c-12.6 0-25 3.7-35.5 10.7l-61.7 41.1c-11 7.4-25.9 4.4-33.3-6.7s-4.4-25.9 6.7-33.3l61.7-41.1c18.4-12.3 40-18.8 62.1-18.8H384c34.7 0 62.9 27.6 64 62c14.6 11.7 24 29.7 24 50c0 4.5-.5 8.8-1.3 13c15.4 11.7 25.3 30.2 25.3 51c0 6.5-1 12.8-2.8 18.7C504.8 238.3 512 254.3 512 272c0 35.3-28.6 64-64 64l-92.3 0c4.7 10.4 8.7 21.2 11.8 32.2l5.7 20c10.9 38.2-11.2 78.1-49.4 89zM32 384c-17.7 0-32-14.3-32-32V128c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H32z"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

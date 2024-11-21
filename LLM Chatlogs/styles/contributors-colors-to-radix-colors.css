@@ -1,0 +1,113 @@
+@import 'contributors-colors.css';
+/* We match the 'indigo' | 'gray' | 'tomato' | 'grass' | 'sky' | 'amber' colors from the figma color scheme to the radix color scheme. These are the default of [RadixTheme](https://www.radix-ui.com/themes/docs/components/theme) */
+/* To generate this file use this [plugin](https://www.figma.com/community/plugin/1260472771849439434) and replace the theme under with the content of the file */
+
+:root,
+.light,
+.light-theme {
+    /* Accent */
+    --indigo-1: var(--colors-contributors-1-light);
+    --indigo-2: var(--colors-contributors-2-light);
+    --indigo-3: var(--colors-contributors-3-light);
+    --indigo-4: var(--colors-contributors-4-light);
+    --indigo-5: var(--colors-contributors-5-light);
+    --indigo-6: var(--colors-contributors-6-light);
+    --indigo-7: var(--colors-contributors-7-light);
+    --indigo-8: var(--colors-contributors-8-light);
+    --indigo-9: var(--colors-contributors-9-light);
+    --indigo-10: var(--colors-contributors-10-light);
+    --indigo-11: var(--colors-contributors-11-light);
+    --indigo-12: var(--colors-contributors-12-light);
+    --indigo-a1: var(--colors-contributors-alpha-1-light);
+    --indigo-a2: var(--colors-contributors-alpha-2-light);
+    --indigo-a3: var(--colors-contributors-alpha-3-light);
+    --indigo-a4: var(--colors-contributors-alpha-4-light);
+    --indigo-a5: var(--colors-contributors-alpha-5-light);
+    --indigo-a6: var(--colors-contributors-alpha-6-light);
+    --indigo-a7: var(--colors-contributors-alpha-7-light);
+    --indigo-a8: var(--colors-contributors-alpha-8-light);
+    --indigo-a9: var(--colors-contributors-alpha-9-light);
+    --indigo-a10: var(--colors-contributors-alpha-10-light);
+    --indigo-a11: var(--colors-contributors-alpha-11-light);
+    --indigo-a12: var(--colors-contributors-alpha-12-light);
+    /* Neutral */
+    --gray-1: var(--colors-contributors-shade-1-light);
+    --gray-2: var(--colors-contributors-shade-2-light);
+    --gray-3: var(--colors-contributors-shade-3-light);
+    --gray-4: var(--colors-contributors-shade-4-light);
+    --gray-5: var(--colors-contributors-shade-5-light);
+    --gray-6: var(--colors-contributors-shade-6-light);
+    --gray-7: var(--colors-contributors-shade-7-light);
+    --gray-8: var(--colors-contributors-shade-8-light);
+    --gray-9: var(--colors-contributors-shade-9-light);
+    --gray-10: var(--colors-contributors-shade-10-light);
+    --gray-11: var(--colors-contributors-shade-11-light);
+    --gray-12: var(--colors-contributors-shade-12-light);
+    --gray-a1: var(--colors-contributors-shade-alpha-1-light);
+    --gray-a2: var(--colors-contributors-shade-alpha-2-light);
+    --gray-a3: var(--colors-contributors-shade-alpha-3-light);
+    --gray-a4: var(--colors-contributors-shade-alpha-4-light);
+    --gray-a5: var(--colors-contributors-shade-alpha-5-light);
+    --gray-a6: var(--colors-contributors-shade-alpha-6-light);
+    --gray-a7: var(--colors-contributors-shade-alpha-7-light);
+    --gray-a8: var(--colors-contributors-shade-alpha-8-light);
+    --gray-a9: var(--colors-contributors-shade-alpha-9-light);
+    --gray-a10: var(--colors-contributors-shade-alpha-10-light);
+    --gray-a11: var(--colors-contributors-shade-alpha-11-light);
+    --gray-a12: var(--colors-contributors-shade-alpha-12-light);
+}
+
+.dark,
+.dark-theme {
+    /* Accent */
+    --indigo-1: var(--colors-contributors-1-dark);
+    --indigo-2: var(--colors-contributors-2-dark);
+    --indigo-3: var(--colors-contributors-3-dark);
+    --indigo-4: var(--colors-contributors-4-dark);
+    --indigo-5: var(--colors-contributors-5-dark);
+    --indigo-6: var(--colors-contributors-6-dark);
+    --indigo-7: var(--colors-contributors-7-dark);
+    --indigo-8: var(--colors-contributors-8-dark);
+    --indigo-9: var(--colors-contributors-9-dark);
+    --indigo-10: var(--colors-contributors-10-dark);
+    --indigo-11: var(--colors-contributors-11-dark);
+    --indigo-12: var(--colors-contributors-12-dark);
+    --indigo-a1: var(--colors-contributors-alpha-1-dark);
+    --indigo-a2: var(--colors-contributors-alpha-2-dark);
+    --indigo-a3: var(--colors-contributors-alpha-3-dark);
+    --indigo-a4: var(--colors-contributors-alpha-4-dark);
+    --indigo-a5: var(--colors-contributors-alpha-5-dark);
+    --indigo-a6: var(--colors-contributors-alpha-6-dark);
+    --indigo-a7: var(--colors-contributors-alpha-7-dark);
+    --indigo-a8: var(--colors-contributors-alpha-8-dark);
+    --indigo-a9: var(--colors-contributors-alpha-9-dark);
+    --indigo-a10: var(--colors-contributors-alpha-10-dark);
+    --indigo-a11: var(--colors-contributors-alpha-11-dark);
+    --indigo-a12: var(--colors-contributors-alpha-12-dark);
+    --indigo-contrast: black;
+    /* Neutral */
+    --gray-1: var(--colors-contributors-shade-1-dark);
+    --gray-2: var(--colors-contributors-shade-2-dark);
+    --gray-3: var(--colors-contributors-shade-3-dark);
+    --gray-4: var(--colors-contributors-shade-4-dark);
+    --gray-5: var(--colors-contributors-shade-5-dark);
+    --gray-6: var(--colors-contributors-shade-6-dark);
+    --gray-7: var(--colors-contributors-shade-7-dark);
+    --gray-8: var(--colors-contributors-shade-8-dark);
+    --gray-9: var(--colors-contributors-shade-9-dark);
+    --gray-10: var(--colors-contributors-shade-10-dark);
+    --gray-11: var(--colors-contributors-shade-11-dark);
+    --gray-12: var(--colors-contributors-shade-12-dark);
+    --gray-a1: var(--colors-contributors-shade-alpha-1-dark);
+    --gray-a2: var(--colors-contributors-shade-alpha-2-dark);
+    --gray-a3: var(--colors-contributors-shade-alpha-3-dark);
+    --gray-a4: var(--colors-contributors-shade-alpha-4-dark);
+    --gray-a5: var(--colors-contributors-shade-alpha-5-dark);
+    --gray-a6: var(--colors-contributors-shade-alpha-6-dark);
+    --gray-a7: var(--colors-contributors-shade-alpha-7-dark);
+    --gray-a8: var(--colors-contributors-shade-alpha-8-dark);
+    --gray-a9: var(--colors-contributors-shade-alpha-9-dark);
+    --gray-a10: var(--colors-contributors-shade-alpha-10-dark);
+    --gray-a11: var(--colors-contributors-shade-alpha-11-dark);
+    --gray-a12: var(--colors-contributors-shade-alpha-12-dark);
+}
